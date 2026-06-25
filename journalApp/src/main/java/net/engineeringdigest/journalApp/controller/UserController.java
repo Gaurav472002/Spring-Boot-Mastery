@@ -5,7 +5,9 @@ import net.engineeringdigest.journalApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.security.core.Authentication;
 
 import java.util.List;
 
@@ -28,19 +30,11 @@ public class UserController {
         return new ResponseEntity<>(users,HttpStatus.OK);
     }
 
-    @PostMapping("/createUser")
-    public ResponseEntity<User> createUser(@RequestBody User user){
+    @PutMapping("/updateUser")
+    public ResponseEntity<?> updateUser(@RequestBody User user){
 
-        userService.saveEntry(user);
-
-        return new ResponseEntity<>(user,HttpStatus.CREATED);
-    }
-
-    @PutMapping("/updateUser/{userName}")
-    public ResponseEntity<?> updateUser(
-            @RequestBody User user,
-            @PathVariable String userName){
-
+        Authentication authentication= SecurityContextHolder.getContext().getAuthentication();
+        String userName = authentication.getName();
         User userInDb = userService.findByUserName(userName);
 
         if(userInDb != null){
@@ -48,16 +42,18 @@ public class UserController {
             userInDb.setUserName(user.getUserName());
             userInDb.setPassword(user.getPassword());
 
-            userService.saveEntry(userInDb);
+            userService.updateUser(userInDb);
 
             return new ResponseEntity<>(userInDb,HttpStatus.OK);
         }
 
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
-    @DeleteMapping("/deleteUser/{userName}")
-    public ResponseEntity<?> deleteUser(@PathVariable String userName){
+    @DeleteMapping("/deleteUser")
+    public ResponseEntity<?> deleteUser(){
 
+        Authentication authentication= SecurityContextHolder.getContext().getAuthentication();
+        String userName = authentication.getName();
         User user = userService.findByUserName(userName);
 
         if(user != null){

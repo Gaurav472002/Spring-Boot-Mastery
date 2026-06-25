@@ -43,7 +43,7 @@ public class JournalEntryService {
             // Add this journal entries inside the array of the particular user
             user.getJournalEntries().add(saved);
             // saved the user with the new journal entry
-            userService.saveEntry(user);
+            userService.saveUser(user);
         }
         catch (Exception e){
             System.out.println(e);
@@ -76,7 +76,7 @@ public class JournalEntryService {
             user.getJournalEntries()
                     .removeIf(x -> x.getId().equals(id));
 
-            userService.saveEntry(user);
+            userService.saveUser(user);
         }
 
         journalEntryRepo.deleteById(id);
