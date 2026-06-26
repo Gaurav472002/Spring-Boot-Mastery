@@ -82,4 +82,7 @@ public class JournalEntryService {
         journalEntryRepo.deleteById(id);
     }
 
+//    public List<JournalEntry> findByUserName(String  userName){
+//
+//    }
 }
