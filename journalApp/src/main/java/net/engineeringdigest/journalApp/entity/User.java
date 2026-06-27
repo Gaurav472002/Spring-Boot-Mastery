@@ -21,6 +21,7 @@ public class User {
 
     private String password;
 
+    // To store the references of the journals for a particular user
     @DBRef
     private List<JournalEntry> journalEntries = new ArrayList<>();
 
