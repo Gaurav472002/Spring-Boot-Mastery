@@ -4,6 +4,7 @@ package net.engineeringdigest.journalApp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.MongoDatabaseFactory;
 import org.springframework.data.mongodb.MongoTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -20,6 +21,7 @@ public class JournalApplication {
     }
 
     @Bean
+//    @Profile("dev")
     public PlatformTransactionManager mongoTransactions(MongoDatabaseFactory dbFactory){
         return new MongoTransactionManager(dbFactory);
     }
