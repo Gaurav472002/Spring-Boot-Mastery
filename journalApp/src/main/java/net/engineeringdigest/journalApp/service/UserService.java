@@ -21,8 +21,10 @@ public class UserService {
     @Autowired
     private userRepo userRepository;
 
-    // We will use slf4j which is an abstraction for logback framework
-//    private static final Logger logger = LoggerFactory.getLogger(UserService.class);
+    /*
+ We will use slf4j which is an abstraction for logback framework
+    private static final Log ger logger = LoggerFactory.getLogger(UserService.class);
+*/
 
     /* Instead of creatintg a logger again and again use can use @Slf4J annotation and log */
     private static final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
