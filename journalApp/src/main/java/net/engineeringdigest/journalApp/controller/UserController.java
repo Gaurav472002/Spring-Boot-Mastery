@@ -1,5 +1,6 @@
 package net.engineeringdigest.journalApp.controller;
 
+import net.engineeringdigest.journalApp.entity.PostRequest;
 import net.engineeringdigest.journalApp.entity.User;
 import net.engineeringdigest.journalApp.service.UserService;
 import net.engineeringdigest.journalApp.service.WeatherService;
@@ -74,6 +75,19 @@ public class UserController {
         return new ResponseEntity<>("Hi " + authentication.getName()
                 + ", Weather: "
                 + weatherService.getWeather("Mumbai"), HttpStatus.OK);
+    }
+
+    @PostMapping("/sendPost")
+    public ResponseEntity<?> sendPost(
+            @RequestBody PostRequest postRequest) {
+
+        String response =
+                weatherService.sendPost(postRequest);
+
+        return new ResponseEntity<>(
+                response,
+                HttpStatus.OK
+        );
     }
 
 }
