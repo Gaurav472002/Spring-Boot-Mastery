@@ -3,18 +3,21 @@ package net.engineeringdigest.journalApp.service;
 import net.engineeringdigest.journalApp.api.response.WeatherResponse;
 import net.engineeringdigest.journalApp.entity.PostRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 
 
-@Component
+@Service
 public class WeatherService {
-    
-    private static  final String apiKey = "899995bcbf621b8d0868ecbbec765ea1";
+
+    @Value("${weather.api.key}")
+    private String apiKey;
     private static final String API =
             "http://api.weatherstack.com/current?access_key=%s&query=%s";
 
