@@ -7,14 +7,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.mongodb.MongoDatabaseFactory;
 import org.springframework.data.mongodb.MongoTransactionManager;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableTransactionManagement
-
 // All the tasks related to the transaction methods will be managed by the PlatformTransactionManager which is a interface which is implemented by the MongoTransactionManager
+@EnableTransactionManagement
+// To run the scheduled jobs
+@EnableScheduling
 public class JournalApplication {
 
     public static void main(String[] args) {
