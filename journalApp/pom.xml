@@ -54,6 +54,24 @@
 
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--         These all dependencies already comes under the spring-boot-starter-test-->
 <!--        <dependency>-->
 <!--            <groupId>org.hamcrest</groupId>-->

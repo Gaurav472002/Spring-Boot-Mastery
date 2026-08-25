@@ -1,5 +1,6 @@
 package net.engineeringdigest.journalApp.controller;
 
+import net.engineeringdigest.journalApp.api.response.WeatherResponse;
 import net.engineeringdigest.journalApp.entity.PostRequest;
 import net.engineeringdigest.journalApp.entity.User;
 import net.engineeringdigest.journalApp.service.UserService;
@@ -69,12 +70,26 @@ public class UserController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
     @GetMapping("/greeting")
-    public ResponseEntity<?> greeting(){
+    public ResponseEntity<?> greeting(
+            @RequestParam String city) {
 
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        return new ResponseEntity<>("Hi " + authentication.getName()
-                + ", Weather: "
-                + weatherService.getWeather("Mumbai"), HttpStatus.OK);
+        Authentication authentication =
+                SecurityContextHolder.getContext().getAuthentication();
+
+        WeatherResponse weatherResponse =
+                weatherService.getWeather(city);
+
+        if (weatherResponse == null) {
+            return new ResponseEntity<>(
+                    "Weather unavailable for city: " + city,
+                    HttpStatus.NOT_FOUND
+            );
+        }
+
+        return new ResponseEntity<>(
+                weatherResponse,
+                HttpStatus.OK
+        );
     }
 
     @PostMapping("/sendPost")

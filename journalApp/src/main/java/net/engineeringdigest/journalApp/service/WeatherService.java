@@ -5,14 +5,13 @@ import net.engineeringdigest.journalApp.cache.AppCache;
 import net.engineeringdigest.journalApp.entity.PostRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
-
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 public class WeatherService {
@@ -20,38 +19,96 @@ public class WeatherService {
     @Value("${weather.api.key}")
     private String apiKey;
 
-
-//    private static final String API =
-//            "http://api.weatherstack.com/current?access_key=%s&query=%s";
-
     @Autowired
     private RestTemplate restTemplate;
 
     @Autowired
     private AppCache appCache;
 
-    public String getWeather(String city) {
+    @Autowired
+    private RedisService redisService;
 
-        String finalAPI = String.format(appCache.APP_CACHE.get(AppCache.Keys.WEATHER_API.toString()), apiKey, city);
 
+    public WeatherResponse getWeather(String city) {
+
+        String cacheKey = "weather_of_" + city.toLowerCase().trim();
+
+        // 1. Check Redis
+        WeatherResponse weatherResponse =
+                redisService.get(cacheKey, WeatherResponse.class);
+
+        if (weatherResponse != null) {
+            System.out.println("Weather fetched from Redis for: " + city);
+            return weatherResponse;
+        }
+
+        // 2. Redis cache miss
+        System.out.println("Weather not found in Redis. Calling API for: " + city);
+
+        String finalAPI = String.format(
+                appCache.APP_CACHE.get(
+                        AppCache.Keys.WEATHER_API.toString()
+                ),
+                apiKey,
+                city
+        );
+
+        // 3. Call Weather API
         ResponseEntity<WeatherResponse> response =
-                restTemplate.exchange(finalAPI,
+                restTemplate.exchange(
+                        finalAPI,
                         HttpMethod.GET,
                         null,
-                        WeatherResponse.class);
+                        WeatherResponse.class
+                );
 
         WeatherResponse body = response.getBody();
 
-        if(body == null || body.getCurrent() == null){
+        // 4. Handle invalid/unavailable weather response
+        if (body == null || body.getCurrent() == null) {
+            System.out.println("Weather unavailable for: " + city);
+            return null;
+        }
+
+        // 5. Store complete WeatherResponse in Redis for 5 minutes
+        redisService.set(
+                cacheKey,
+                body,
+                300L
+        );
+
+        System.out.println("Weather stored in Redis for: " + city);
+
+        // 6. Return complete response
+        return body;
+    }
+
+
+    private String formatWeatherResponse(WeatherResponse weatherResponse) {
+
+        if (weatherResponse == null ||
+                weatherResponse.getCurrent() == null) {
+
             return "Weather unavailable";
         }
 
-        return body.getCurrent().getTemperature() + "°C, "
-                + body.getCurrent().getWeatherDescription().get(0)
-                + ", Feels like "
-                + body.getCurrent().getFeelslike() + "°C";
-    }
+        String description = "Unknown";
 
+        if (weatherResponse.getCurrent().getWeatherDescription() != null &&
+                !weatherResponse.getCurrent().getWeatherDescription().isEmpty()) {
+
+            description =
+                    weatherResponse.getCurrent()
+                            .getWeatherDescription()
+                            .get(0);
+        }
+
+        return weatherResponse.getCurrent().getTemperature() + "°C, "
+                + description
+                + ", Feels like "
+                + weatherResponse.getCurrent().getFeelslike()
+                + "°C";
+    }
 
 
     // POST request using RestTemplate
@@ -60,8 +117,6 @@ public class WeatherService {
         String url =
                 "https://jsonplaceholder.typicode.com/posts";
 
-
-        // 1. Create headers
         HttpHeaders headers =
                 new HttpHeaders();
 
@@ -69,16 +124,12 @@ public class WeatherService {
                 MediaType.APPLICATION_JSON
         );
 
-
-        // 2. Combine body + headers
         HttpEntity<PostRequest> requestEntity =
                 new HttpEntity<>(
                         postRequest,
                         headers
                 );
 
-
-        // 3. Send POST request
         ResponseEntity<String> response =
                 restTemplate.exchange(
                         url,
@@ -87,10 +138,6 @@ public class WeatherService {
                         String.class
                 );
 
-
-        // 4. Get response body
         return response.getBody();
     }
-
-
 }
