@@ -34,4 +34,4 @@ public class JournalApplication {
 
         return new RestTemplate();
     }
-}
+}<
