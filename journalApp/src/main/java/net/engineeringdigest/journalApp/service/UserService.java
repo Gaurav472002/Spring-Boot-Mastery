@@ -1,6 +1,8 @@
 package net.engineeringdigest.journalApp.service;
 
 import lombok.extern.slf4j.Slf4j;
+import net.engineeringdigest.journalApp.api.request.AdminCreateRequest;
+import net.engineeringdigest.journalApp.api.request.SignupRequest;
 import net.engineeringdigest.journalApp.entity.User;
 import net.engineeringdigest.journalApp.repository.userRepo;
 import org.slf4j.Logger;
@@ -40,40 +42,58 @@ public class UserService {
     public void deleteById(String id) {
         userRepository.deleteById(id);
     }
-
-    public void saveNewUser(User user) {
-
-        try{
-            user.setPassword(passwordEncoder.encode(user.getPassword()));
-            user.setRoles(Arrays.asList("USER"));
-            userRepository.save(user);
-        }catch(Exception e){
-//            logger.info("Duplicate user found");
+//
+//    public void saveNewUser(User user) {
+//
+//        try{
+//            user.setPassword(passwordEncoder.encode(user.getPassword()));
+//            user.setRoles(Arrays.asList("USER"));
+//            userRepository.save(user);
+//        }catch(Exception e){
+////            logger.info("Duplicate user found");
+////            // we can add dynamic arguments as well
+////            logger.error("Duplicate user found {}",user.getUserName(), e);
+////            logger.warn("Duplicate user found");
+////
+////            // By default the above three are enabled
+////            logger.debug("Duplicate user found");
+////            logger.trace("Duplicate user found");
+//
+//
+//            log.info("Duplicate user found");
 //            // we can add dynamic arguments as well
-//            logger.error("Duplicate user found {}",user.getUserName(), e);
-//            logger.warn("Duplicate user found");
+//            log.error("Duplicate user found {}",user.getUserName(), e);
+//            log.warn("Duplicate user found");
 //
 //            // By default the above three are enabled
-//            logger.debug("Duplicate user found");
-//            logger.trace("Duplicate user found");
+//            log.debug("Duplicate user found");
+//            log.trace("Duplicate user found");
+//        }
+//
+//    }
 
+public void saveNewUser(SignupRequest request) {
 
-            log.info("Duplicate user found");
-            // we can add dynamic arguments as well
-            log.error("Duplicate user found {}",user.getUserName(), e);
-            log.warn("Duplicate user found");
+    User user = new User();
 
-            // By default the above three are enabled
-            log.debug("Duplicate user found");
-            log.trace("Duplicate user found");
-        }
+    user.setUserName(request.getUserName());
+    user.setEmail(request.getEmail());
+    user.setPassword(passwordEncoder.encode(request.getPassword()));
+    user.setSentimentAnalysis(request.isSentimentAnalysis());
+    user.setRoles(Arrays.asList("USER"));
 
-    }
+    userRepository.save(user);
+}
 
-    public void saveAdmin(User admin){
+    public void saveAdmin(AdminCreateRequest request) {
 
-        admin.setPassword(passwordEncoder.encode(admin.getPassword()));
-        admin.setRoles(Arrays.asList("USER","ADMIN"));
+        User admin = new User();
+
+        admin.setUserName(request.getUserName());
+        admin.setEmail(request.getEmail());
+        admin.setPassword(passwordEncoder.encode(request.getPassword()));
+        admin.setSentimentAnalysis(request.isSentimentAnalysis());
+        admin.setRoles(Arrays.asList("USER", "ADMIN"));
 
         userRepository.save(admin);
     }

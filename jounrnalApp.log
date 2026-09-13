@@ -2647,3 +2647,1155 @@ Caused by: java.net.SocketException: Socket is closed
 21:11:07.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
 21:11:07.931 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-weekly-sentiment-group-1 unregistered
 21:11:07.932 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: Consumer stopped
+00:34:12.979 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+00:34:12.983 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+00:34:13.164 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 176 ms. Found 3 MongoDB repository interfaces.
+00:34:13.180 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+00:34:13.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+00:34:13.203 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.configJournalAppRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:34:13.205 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.journalEntryRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:34:13.206 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.userRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:34:13.206 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+00:34:14.159 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+00:34:14.169 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+00:34:14.173 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:34:14.173 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+00:34:14.312 [main] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring embedded WebApplicationContext
+00:34:14.313 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3271 ms
+00:34:14.593 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/JetBrains s.r.o./11.0.16+8-b2043.64"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='gaurav472', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@1a914089]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.pfxnloy.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ww38et-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+00:34:15.017 [main] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+00:34:15.045 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017 to client view of cluster
+00:34:15.078 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017 to client view of cluster
+00:34:15.079 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017 to client view of cluster
+00:34:15.087 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@51eb0e84 from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+00:34:15.811 [cluster-rtt-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:158459}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:34:15.811 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:158459}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:34:15.811 [cluster-rtt-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:150606}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+00:34:15.811 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:150606}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+00:34:15.812 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=332211400, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00fecb2c5f5564e41c21a, counter=5}, lastWriteDate=Sun Sep 13 00:34:15 IST 2026, lastUpdateTimeNanos=302526490703100}
+00:34:15.812 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=315689100, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007e, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00cc9ff497db790260afa, counter=10}, lastWriteDate=Sun Sep 13 00:34:15 IST 2026, lastUpdateTimeNanos=302526490703100}
+00:34:15.817 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000007e from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:34:15.818 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 56 from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:34:15.818 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:34:16.020 [cluster-rtt-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:135490}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+00:34:16.024 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:135490}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+00:34:16.025 [cluster-ClusterId{value='6aa5a22eddedfb013d15c3ee', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=176155100, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa0098238811d732ae8e14e, counter=10}, lastWriteDate=Sun Sep 13 00:34:15 IST 2026, lastUpdateTimeNanos=302526705570500}
+00:34:16.218 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:158485}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:34:17.764 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6081f330, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eb695e8, org.springframework.security.web.context.SecurityContextPersistenceFilter@70e1aa20, org.springframework.security.web.header.HeaderWriterFilter@26f204a4, org.springframework.security.web.authentication.logout.LogoutFilter@7a47f0be, net.engineeringdigest.journalApp.filter.JwtFilter@1d2def55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1618c98a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25110bb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7eebb316, org.springframework.security.web.session.SessionManagementFilter@7b80af04, org.springframework.security.web.access.ExceptionTranslationFilter@df432ec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@204c5ddf]
+00:34:18.501 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weekly-sentiment-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weekly-sentiment-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+00:34:18.835 [main] INFO  o.a.k.c.s.a.AbstractLogin - Successfully logged in.
+00:34:18.977 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.2
+00:34:18.978 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+00:34:18.979 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789239858975
+00:34:18.983 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Subscribed to topic(s): weekly-sentiments
+00:34:18.991 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+00:34:19.012 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/dev/journal'
+00:34:19.923 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-0 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:34:19.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-1 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:34:19.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-2 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:34:19.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-3 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:34:19.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-4 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:34:19.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-5 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:34:19.927 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Cluster ID: lkc-rr0k6op
+00:34:19.929 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Discovered group coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null)
+00:34:20.031 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+00:34:20.417 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: need to re-join with the given member-id
+00:34:20.417 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+00:34:20.466 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully joined group with generation Generation{generationId=5, memberId='consumer-weekly-sentiment-group-1-0359469e-ce91-498f-aa9c-91ad713f66f3', protocol='range'}
+00:34:20.468 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Finished assignment for group at generation 5: {consumer-weekly-sentiment-group-1-0359469e-ce91-498f-aa9c-91ad713f66f3=Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])}
+00:34:20.521 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully synced group in generation Generation{generationId=5, memberId='consumer-weekly-sentiment-group-1-0359469e-ce91-498f-aa9c-91ad713f66f3', protocol='range'}
+00:34:20.523 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Notifying assignor about the new Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])
+00:34:20.526 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Adding newly assigned partitions: weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+00:34:20.609 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 9 rack: aps1-az1)], epoch=4}}
+00:34:20.609 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-2 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 8 rack: aps1-az2)], epoch=4}}
+00:34:20.609 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-5 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 11 rack: aps1-az2)], epoch=4}}
+00:34:20.609 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 10 rack: aps1-az3)], epoch=4}}
+00:34:20.609 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-1 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b7-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 7 rack: aps1-az3)], epoch=4}}
+00:34:20.609 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 6 rack: aps1-az1)], epoch=4}}
+00:34:20.724 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions assigned: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+00:37:16.160 [http-nio-8085-exec-6] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:37:16.160 [http-nio-8085-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:37:16.161 [http-nio-8085-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+00:37:16.925 [http-nio-8085-exec-4] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 444 ms
+00:40:36.311 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Revoke previously assigned partitions weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+00:40:36.312 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions revoked: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+00:40:36.312 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Member consumer-weekly-sentiment-group-1-0359469e-ce91-498f-aa9c-91ad713f66f3 sending LeaveGroup request to coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+00:40:36.312 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+00:40:36.312 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+00:40:36.312 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Unsubscribed all topics or patterns and assigned partitions
+00:40:36.313 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+00:40:36.313 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+00:40:36.350 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+00:40:36.351 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+00:40:36.351 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+00:40:36.358 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-weekly-sentiment-group-1 unregistered
+00:40:36.358 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: Consumer stopped
+00:43:08.822 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+00:43:08.829 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+00:43:09.171 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 332 ms. Found 3 MongoDB repository interfaces.
+00:43:09.201 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+00:43:09.204 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+00:43:09.233 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.configJournalAppRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:43:09.235 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.journalEntryRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:43:09.236 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.userRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:43:09.236 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+00:43:10.555 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+00:43:10.566 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+00:43:10.570 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:43:10.570 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+00:43:10.829 [main] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring embedded WebApplicationContext
+00:43:10.830 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4010 ms
+00:43:11.260 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/JetBrains s.r.o./11.0.16+8-b2043.64"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='gaurav472', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6459f4ea]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.pfxnloy.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ww38et-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+00:43:11.306 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017 to client view of cluster
+00:43:11.359 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017 to client view of cluster
+00:43:11.362 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017 to client view of cluster
+00:43:12.099 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@2eebce87 from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+00:43:12.352 [cluster-rtt-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:158614}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:43:12.352 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:150818}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+00:43:12.352 [cluster-rtt-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:150818}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+00:43:12.352 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:158614}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:43:12.352 [cluster-rtt-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:135669}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+00:43:12.352 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:135669}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+00:43:12.357 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=608667200, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00fecb2c5f5564e41c21a, counter=5}, lastWriteDate=Sun Sep 13 00:43:11 IST 2026, lastUpdateTimeNanos=303063031034500}
+00:43:12.357 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=599045300, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007e, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00cc9ff497db790260afa, counter=10}, lastWriteDate=Sun Sep 13 00:43:11 IST 2026, lastUpdateTimeNanos=303063030942900}
+00:43:12.357 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=601454400, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa0098238811d732ae8e14e, counter=10}, lastWriteDate=Sun Sep 13 00:43:11 IST 2026, lastUpdateTimeNanos=303063030875000}
+00:43:12.371 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000007e from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:43:12.371 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 56 from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:43:12.371 [cluster-ClusterId{value='6aa5a447744d251c96743b7b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:43:12.780 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:158708}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:43:14.846 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10f397d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33a3e5db, org.springframework.security.web.context.SecurityContextPersistenceFilter@48b09105, org.springframework.security.web.header.HeaderWriterFilter@16c0be3b, org.springframework.security.web.authentication.logout.LogoutFilter@3cacc87, net.engineeringdigest.journalApp.filter.JwtFilter@274bae2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25110bb9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36f05595, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f9213d2, org.springframework.security.web.session.SessionManagementFilter@1618c98a, org.springframework.security.web.access.ExceptionTranslationFilter@42403dc6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bfe83d]
+00:43:16.132 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weekly-sentiment-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weekly-sentiment-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+00:43:16.526 [main] INFO  o.a.k.c.s.a.AbstractLogin - Successfully logged in.
+00:43:16.690 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.2
+00:43:16.695 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+00:43:16.695 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789240396687
+00:43:16.701 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Subscribed to topic(s): weekly-sentiments
+00:43:16.720 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+00:43:16.749 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/dev/journal'
+00:43:17.724 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-0 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:43:17.725 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-1 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:43:17.725 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-2 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:43:17.725 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-3 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:43:17.725 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-4 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:43:17.725 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-5 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:43:17.727 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Cluster ID: lkc-rr0k6op
+00:43:17.728 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Discovered group coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null)
+00:43:17.772 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+00:43:18.204 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: need to re-join with the given member-id
+00:43:18.205 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+00:43:18.250 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully joined group with generation Generation{generationId=7, memberId='consumer-weekly-sentiment-group-1-e31b90e3-42a6-4be3-b610-6c3af6f1ff52', protocol='range'}
+00:43:18.252 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Finished assignment for group at generation 7: {consumer-weekly-sentiment-group-1-e31b90e3-42a6-4be3-b610-6c3af6f1ff52=Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])}
+00:43:18.300 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully synced group in generation Generation{generationId=7, memberId='consumer-weekly-sentiment-group-1-e31b90e3-42a6-4be3-b610-6c3af6f1ff52', protocol='range'}
+00:43:18.300 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Notifying assignor about the new Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])
+00:43:18.302 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Adding newly assigned partitions: weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+00:43:18.405 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 9 rack: aps1-az1)], epoch=4}}
+00:43:18.406 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-2 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 8 rack: aps1-az2)], epoch=4}}
+00:43:18.406 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-5 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 11 rack: aps1-az2)], epoch=4}}
+00:43:18.406 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 10 rack: aps1-az3)], epoch=4}}
+00:43:18.406 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-1 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b7-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 7 rack: aps1-az3)], epoch=4}}
+00:43:18.406 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 6 rack: aps1-az1)], epoch=4}}
+00:43:18.518 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions assigned: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+00:44:05.267 [http-nio-8085-exec-2] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:44:05.267 [http-nio-8085-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:44:05.268 [http-nio-8085-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+00:44:06.211 [http-nio-8085-exec-10] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 525 ms
+00:45:57.628 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Revoke previously assigned partitions weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+00:45:57.629 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions revoked: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+00:45:57.629 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Member consumer-weekly-sentiment-group-1-e31b90e3-42a6-4be3-b610-6c3af6f1ff52 sending LeaveGroup request to coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+00:45:57.630 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+00:45:57.630 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+00:45:57.630 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Unsubscribed all topics or patterns and assigned partitions
+00:45:57.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+00:45:57.631 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+00:45:57.713 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+00:45:57.713 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+00:45:57.713 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+00:45:57.720 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-weekly-sentiment-group-1 unregistered
+00:45:57.721 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: Consumer stopped
+00:46:07.664 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+00:46:07.669 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+00:46:07.876 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 201 ms. Found 3 MongoDB repository interfaces.
+00:46:07.900 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+00:46:07.902 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+00:46:07.922 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.configJournalAppRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:46:07.923 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.journalEntryRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:46:07.924 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.userRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+00:46:07.925 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+00:46:10.056 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+00:46:10.075 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+00:46:10.079 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+00:46:10.080 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+00:46:10.308 [main] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring embedded WebApplicationContext
+00:46:10.308 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3894 ms
+00:46:10.661 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017 to client view of cluster
+00:46:10.687 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/JetBrains s.r.o./11.0.16+8-b2043.64"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='gaurav472', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@3f6cce7f]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.pfxnloy.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ww38et-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+00:46:10.711 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017 to client view of cluster
+00:46:10.719 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017 to client view of cluster
+00:46:11.504 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@5fb7ab9c from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+00:46:11.699 [cluster-rtt-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:135733}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+00:46:11.699 [cluster-rtt-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:158815}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:46:11.699 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:135733}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+00:46:11.699 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:158815}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:46:11.699 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:150898}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+00:46:11.699 [cluster-rtt-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:150898}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+00:46:11.700 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=549230400, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa0098238811d732ae8e14e, counter=10}, lastWriteDate=Sun Sep 13 00:46:10 IST 2026, lastUpdateTimeNanos=303242378469400}
+00:46:11.700 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=549281300, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00fecb2c5f5564e41c21a, counter=5}, lastWriteDate=Sun Sep 13 00:46:10 IST 2026, lastUpdateTimeNanos=303242378470200}
+00:46:11.700 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=549259600, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007e, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00cc9ff497db790260afa, counter=10}, lastWriteDate=Sun Sep 13 00:46:10 IST 2026, lastUpdateTimeNanos=303242378483700}
+00:46:11.706 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000007e from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:46:11.707 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 56 from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:46:11.707 [cluster-ClusterId{value='6aa5a4fa82ca7818c3b4fbaa', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:46:12.079 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:158797}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+00:46:14.454 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b5e1fc5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47ffa248, org.springframework.security.web.context.SecurityContextPersistenceFilter@41492479, org.springframework.security.web.header.HeaderWriterFilter@b3a8455, org.springframework.security.web.authentication.logout.LogoutFilter@15bb8ed5, net.engineeringdigest.journalApp.filter.JwtFilter@44b9c7c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@568ef502, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b3abeeb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18ac25e6, org.springframework.security.web.session.SessionManagementFilter@18b45500, org.springframework.security.web.access.ExceptionTranslationFilter@62f37bfd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6081f330]
+00:46:15.724 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weekly-sentiment-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weekly-sentiment-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+00:46:16.022 [main] INFO  o.a.k.c.s.a.AbstractLogin - Successfully logged in.
+00:46:16.218 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.2
+00:46:16.220 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+00:46:16.221 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789240576216
+00:46:16.228 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Subscribed to topic(s): weekly-sentiments
+00:46:16.254 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+00:46:16.290 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/dev/journal'
+00:46:17.187 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-0 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:46:17.188 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-1 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:46:17.188 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-2 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:46:17.188 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-3 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:46:17.188 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-4 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:46:17.188 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-5 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+00:46:17.190 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Cluster ID: lkc-rr0k6op
+00:46:17.192 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Discovered group coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null)
+00:46:17.209 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+00:46:17.629 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: need to re-join with the given member-id
+00:46:17.630 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+00:46:17.675 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully joined group with generation Generation{generationId=9, memberId='consumer-weekly-sentiment-group-1-98d308d7-7c55-447a-bc66-996e04f05e67', protocol='range'}
+00:46:17.677 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Finished assignment for group at generation 9: {consumer-weekly-sentiment-group-1-98d308d7-7c55-447a-bc66-996e04f05e67=Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])}
+00:46:17.731 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully synced group in generation Generation{generationId=9, memberId='consumer-weekly-sentiment-group-1-98d308d7-7c55-447a-bc66-996e04f05e67', protocol='range'}
+00:46:17.732 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Notifying assignor about the new Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])
+00:46:17.735 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Adding newly assigned partitions: weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+00:46:17.835 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 9 rack: aps1-az1)], epoch=4}}
+00:46:17.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-2 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 8 rack: aps1-az2)], epoch=4}}
+00:46:17.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-5 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 11 rack: aps1-az2)], epoch=4}}
+00:46:17.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 10 rack: aps1-az3)], epoch=4}}
+00:46:17.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-1 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b7-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 7 rack: aps1-az3)], epoch=4}}
+00:46:17.836 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 6 rack: aps1-az1)], epoch=4}}
+00:46:17.837 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions assigned: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+00:46:25.313 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:46:25.314 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+00:46:25.315 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+00:46:26.142 [http-nio-8085-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 584 ms
+00:52:18.723 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Revoke previously assigned partitions weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+00:52:18.724 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions revoked: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+00:52:18.725 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Member consumer-weekly-sentiment-group-1-98d308d7-7c55-447a-bc66-996e04f05e67 sending LeaveGroup request to coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+00:52:18.726 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+00:52:18.726 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+00:52:18.726 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Unsubscribed all topics or patterns and assigned partitions
+00:52:18.726 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+00:52:18.726 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+00:52:18.798 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+00:52:18.798 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+00:52:18.798 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+00:52:18.804 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-weekly-sentiment-group-1 unregistered
+00:52:18.805 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: Consumer stopped
+12:29:12.439 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12:29:12.443 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+12:29:12.594 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 3 MongoDB repository interfaces.
+12:29:12.613 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12:29:12.615 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+12:29:12.629 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.configJournalAppRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+12:29:12.630 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.journalEntryRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+12:29:12.631 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.userRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+12:29:12.631 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+12:29:13.443 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+12:29:13.454 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+12:29:13.458 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:29:13.458 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+12:29:13.598 [main] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring embedded WebApplicationContext
+12:29:13.598 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2287 ms
+12:29:13.815 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017 to client view of cluster
+12:29:13.823 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/JetBrains s.r.o./11.0.16+8-b2043.64"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='gaurav472', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6b867ee7]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.pfxnloy.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ww38et-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+12:29:13.844 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017 to client view of cluster
+12:29:13.845 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017 to client view of cluster
+12:29:14.225 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@6def0632 from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+12:29:14.450 [cluster-rtt-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:149889}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+12:29:14.449 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:149889}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+12:29:14.450 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:174335}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:29:14.449 [cluster-rtt-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:166881}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+12:29:14.449 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:166881}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+12:29:14.450 [cluster-rtt-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:174335}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:29:14.451 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=387849300, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007e, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00cc9ff497db790260afa, counter=10}, lastWriteDate=Sun Sep 13 12:29:13 IST 2026, lastUpdateTimeNanos=345425151461100}
+12:29:14.451 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=387718500, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa0098238811d732ae8e14e, counter=10}, lastWriteDate=Sun Sep 13 12:29:13 IST 2026, lastUpdateTimeNanos=345425151360300}
+12:29:14.451 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=387744400, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00fecb2c5f5564e41c21a, counter=5}, lastWriteDate=Sun Sep 13 12:29:13 IST 2026, lastUpdateTimeNanos=345425151360700}
+12:29:14.455 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000007e from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:29:14.456 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 56 from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:29:14.456 [cluster-ClusterId{value='6aa649c1677825024fdb1482', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:29:14.735 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:174410}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:29:15.923 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e645600, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e7b3e54, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c13019c, org.springframework.security.web.header.HeaderWriterFilter@dbda472, org.springframework.security.web.authentication.logout.LogoutFilter@1805ca5c, net.engineeringdigest.journalApp.filter.JwtFilter@7a2a7492, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47ae6c18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74e2cfc5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78d61f17, org.springframework.security.web.session.SessionManagementFilter@62a41279, org.springframework.security.web.access.ExceptionTranslationFilter@18b45500, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@248d2cec]
+12:29:16.563 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weekly-sentiment-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weekly-sentiment-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+12:29:16.682 [main] INFO  o.a.k.c.s.a.AbstractLogin - Successfully logged in.
+12:29:16.758 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.2
+12:29:16.759 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+12:29:16.759 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789282756756
+12:29:16.762 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Subscribed to topic(s): weekly-sentiments
+12:29:16.770 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+12:29:16.793 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/dev/journal'
+12:29:17.625 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-0 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:29:17.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-1 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:29:17.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-2 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:29:17.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-3 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:29:17.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-4 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:29:17.626 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-5 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:29:17.627 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Cluster ID: lkc-rr0k6op
+12:29:17.627 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Discovered group coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null)
+12:29:17.636 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+12:29:18.002 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: need to re-join with the given member-id
+12:29:18.002 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+12:29:18.039 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully joined group with generation Generation{generationId=11, memberId='consumer-weekly-sentiment-group-1-5041f3e5-c927-4781-bb87-e06beb2598a0', protocol='range'}
+12:29:18.040 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Finished assignment for group at generation 11: {consumer-weekly-sentiment-group-1-5041f3e5-c927-4781-bb87-e06beb2598a0=Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])}
+12:29:18.084 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully synced group in generation Generation{generationId=11, memberId='consumer-weekly-sentiment-group-1-5041f3e5-c927-4781-bb87-e06beb2598a0', protocol='range'}
+12:29:18.084 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Notifying assignor about the new Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])
+12:29:18.086 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Adding newly assigned partitions: weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+12:29:18.168 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 9 rack: aps1-az1)], epoch=4}}
+12:29:18.168 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-2 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 8 rack: aps1-az2)], epoch=4}}
+12:29:18.169 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-5 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 11 rack: aps1-az2)], epoch=4}}
+12:29:18.169 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 10 rack: aps1-az3)], epoch=4}}
+12:29:18.169 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-1 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b7-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 7 rack: aps1-az3)], epoch=4}}
+12:29:18.169 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 6 rack: aps1-az1)], epoch=4}}
+12:29:18.280 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions assigned: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+12:29:22.808 [http-nio-8085-exec-3] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:29:22.808 [http-nio-8085-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:29:22.809 [http-nio-8085-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+12:29:23.707 [http-nio-8085-exec-7] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 550 ms
+12:32:58.923 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Revoke previously assigned partitions weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+12:32:58.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions revoked: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+12:32:58.924 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Member consumer-weekly-sentiment-group-1-5041f3e5-c927-4781-bb87-e06beb2598a0 sending LeaveGroup request to coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+12:32:58.925 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+12:32:58.925 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+12:32:58.925 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Unsubscribed all topics or patterns and assigned partitions
+12:32:58.925 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+12:32:58.925 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+12:32:58.965 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+12:32:58.965 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+12:32:58.966 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+12:32:58.971 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-weekly-sentiment-group-1 unregistered
+12:32:58.972 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: Consumer stopped
+12:43:53.835 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12:43:53.838 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+12:43:54.005 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 162 ms. Found 3 MongoDB repository interfaces.
+12:43:54.022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12:43:54.023 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+12:43:54.036 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.configJournalAppRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+12:43:54.037 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.journalEntryRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+12:43:54.038 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.userRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+12:43:54.038 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+12:43:54.777 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+12:43:54.784 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+12:43:54.787 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:43:54.787 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+12:43:54.936 [main] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring embedded WebApplicationContext
+12:43:54.936 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2050 ms
+12:43:55.208 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017 to client view of cluster
+12:43:55.229 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/JetBrains s.r.o./11.0.16+8-b2043.64"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='gaurav472', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6486fe7b]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.pfxnloy.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ww38et-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+12:43:55.244 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017 to client view of cluster
+12:43:55.246 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017 to client view of cluster
+12:43:55.666 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@26bb92e2 from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+12:43:55.945 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:150216}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+12:43:55.945 [cluster-rtt-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:167274}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+12:43:55.945 [cluster-rtt-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:150216}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+12:43:55.945 [cluster-rtt-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:174788}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:43:55.945 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:174788}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:43:55.945 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:167274}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+12:43:55.946 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=479605500, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00fecb2c5f5564e41c21a, counter=5}, lastWriteDate=Sun Sep 13 12:43:54 IST 2026, lastUpdateTimeNanos=346306647101600}
+12:43:55.946 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=476907400, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007e, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00cc9ff497db790260afa, counter=10}, lastWriteDate=Sun Sep 13 12:43:54 IST 2026, lastUpdateTimeNanos=346306647021800}
+12:43:55.946 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=483408500, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa0098238811d732ae8e14e, counter=10}, lastWriteDate=Sun Sep 13 12:43:54 IST 2026, lastUpdateTimeNanos=346306647164500}
+12:43:55.961 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000007e from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:43:55.961 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 56 from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:43:55.961 [cluster-ClusterId{value='6aa64d334d9d6e7c5e6bba4b', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:43:56.238 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:174708}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+12:43:57.421 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29db008c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d008e61, org.springframework.security.web.context.SecurityContextPersistenceFilter@c697186, org.springframework.security.web.header.HeaderWriterFilter@7178d811, org.springframework.security.web.authentication.logout.LogoutFilter@3991fe6d, net.engineeringdigest.journalApp.filter.JwtFilter@44abdb1f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2358443e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@516b84d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@191b44ca, org.springframework.security.web.session.SessionManagementFilter@3134b261, org.springframework.security.web.access.ExceptionTranslationFilter@7e1fb22c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54d35ed5]
+12:43:58.177 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weekly-sentiment-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weekly-sentiment-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+12:43:58.361 [main] INFO  o.a.k.c.s.a.AbstractLogin - Successfully logged in.
+12:43:58.467 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.2
+12:43:58.469 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+12:43:58.469 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789283638464
+12:43:58.474 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Subscribed to topic(s): weekly-sentiments
+12:43:58.487 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+12:43:58.504 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/dev/journal'
+12:43:59.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-0 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:43:59.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-1 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:43:59.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-2 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:43:59.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-3 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:43:59.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-4 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:43:59.283 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-5 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+12:43:59.285 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Cluster ID: lkc-rr0k6op
+12:43:59.287 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Discovered group coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null)
+12:43:59.300 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+12:43:59.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: need to re-join with the given member-id
+12:43:59.692 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+12:43:59.735 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully joined group with generation Generation{generationId=13, memberId='consumer-weekly-sentiment-group-1-de316f8c-e9b7-49ee-9a0b-5332b08c92ae', protocol='range'}
+12:43:59.737 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Finished assignment for group at generation 13: {consumer-weekly-sentiment-group-1-de316f8c-e9b7-49ee-9a0b-5332b08c92ae=Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])}
+12:43:59.785 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully synced group in generation Generation{generationId=13, memberId='consumer-weekly-sentiment-group-1-de316f8c-e9b7-49ee-9a0b-5332b08c92ae', protocol='range'}
+12:43:59.785 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Notifying assignor about the new Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])
+12:43:59.787 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Adding newly assigned partitions: weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+12:43:59.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 9 rack: aps1-az1)], epoch=4}}
+12:43:59.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-2 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 8 rack: aps1-az2)], epoch=4}}
+12:43:59.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-5 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 11 rack: aps1-az2)], epoch=4}}
+12:43:59.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 10 rack: aps1-az3)], epoch=4}}
+12:43:59.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-1 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b7-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 7 rack: aps1-az3)], epoch=4}}
+12:43:59.883 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 6 rack: aps1-az1)], epoch=4}}
+12:43:59.988 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions assigned: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+12:44:03.900 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:44:03.900 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:44:03.901 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+12:44:04.811 [http-nio-8085-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 549 ms
+12:52:59.294 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Node -1 disconnected.
+12:53:38.023 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Revoke previously assigned partitions weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+12:53:38.023 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions revoked: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+12:53:38.024 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Member consumer-weekly-sentiment-group-1-de316f8c-e9b7-49ee-9a0b-5332b08c92ae sending LeaveGroup request to coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+12:53:38.024 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+12:53:38.024 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+12:53:38.024 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Unsubscribed all topics or patterns and assigned partitions
+12:53:38.025 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+12:53:38.025 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+12:53:38.065 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+12:53:38.065 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+12:53:38.065 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+12:53:38.070 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-weekly-sentiment-group-1 unregistered
+12:53:38.070 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: Consumer stopped
+13:14:02.629 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+13:14:02.634 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+13:14:02.803 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 164 ms. Found 3 MongoDB repository interfaces.
+13:14:02.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+13:14:02.820 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+13:14:02.834 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.configJournalAppRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+13:14:02.835 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.journalEntryRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+13:14:02.837 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.repository.userRepo; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+13:14:02.837 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+13:14:03.643 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+13:14:03.651 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+13:14:03.654 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:14:03.654 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+13:14:03.787 [main] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring embedded WebApplicationContext
+13:14:03.788 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2320 ms
+13:14:03.992 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017 to client view of cluster
+13:14:04.004 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/JetBrains s.r.o./11.0.16+8-b2043.64"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='gaurav472', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6486fe7b]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.pfxnloy.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-ww38et-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+13:14:04.022 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017 to client view of cluster
+13:14:04.023 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-srv-cluster0.pfxnloy.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017 to client view of cluster
+13:14:04.407 [main] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@63de4fa from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+13:14:04.592 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:175591}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+13:14:04.592 [cluster-rtt-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:151009}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+13:14:04.592 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:151009}] to ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017
+13:14:04.592 [cluster-rtt-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:175610}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+13:14:04.592 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:168045}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+13:14:04.592 [cluster-rtt-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:168045}] to ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017
+13:14:04.593 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=358508400, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007e, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00cc9ff497db790260afa, counter=10}, lastWriteDate=Sun Sep 13 13:14:03 IST 2026, lastUpdateTimeNanos=348115293229100}
+13:14:04.593 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=354246300, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa0098238811d732ae8e14e, counter=10}, lastWriteDate=Sun Sep 13 13:14:03 IST 2026, lastUpdateTimeNanos=348115293240000}
+13:14:04.593 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=358539000, setName='atlas-ww38et-shard-0', canonicalAddress=ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017, hosts=[ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-00.pfxnloy.mongodb.net:27017, ac-5nei8nu-shard-00-02.pfxnloy.mongodb.net:27017], passives=[], arbiters=[], primary='ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='cacheState', value='READY'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=56, topologyVersion=TopologyVersion{processId=6aa00fecb2c5f5564e41c21a, counter=5}, lastWriteDate=Sun Sep 13 13:14:03 IST 2026, lastUpdateTimeNanos=348115293229200}
+13:14:04.597 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000007e from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+13:14:04.598 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 56 from replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+13:14:04.598 [cluster-ClusterId{value='6aa654435bf4834e7ac3dcb5', description='null'}-ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+13:14:04.864 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:175470}] to ac-5nei8nu-shard-00-01.pfxnloy.mongodb.net:27017
+13:14:06.023 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4de93edd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53b2e1eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@aa633e6, org.springframework.security.web.header.HeaderWriterFilter@7e1fb22c, org.springframework.security.web.authentication.logout.LogoutFilter@61d7bb61, net.engineeringdigest.journalApp.filter.JwtFilter@fcd0e8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c697186, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29ba63f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29db008c, org.springframework.security.web.session.SessionManagementFilter@1805ca5c, org.springframework.security.web.access.ExceptionTranslationFilter@15bb8ed5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@552ffa44]
+13:14:06.688 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-weekly-sentiment-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = weekly-sentiment-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+13:14:06.807 [main] INFO  o.a.k.c.s.a.AbstractLogin - Successfully logged in.
+13:14:06.906 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.2
+13:14:06.908 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+13:14:06.909 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789285446903
+13:14:06.916 [main] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Subscribed to topic(s): weekly-sentiments
+13:14:06.928 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+13:14:06.953 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/dev/journal'
+13:14:07.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-0 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:14:07.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-1 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:14:07.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-2 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:14:07.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-3 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:14:07.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-4 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:14:07.855 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting the last seen epoch of partition weekly-sentiments-5 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:14:07.857 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Cluster ID: lkc-rr0k6op
+13:14:07.858 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Discovered group coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null)
+13:14:07.866 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+13:14:08.249 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: need to re-join with the given member-id
+13:14:08.249 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] (Re-)joining group
+13:14:08.291 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully joined group with generation Generation{generationId=15, memberId='consumer-weekly-sentiment-group-1-39b2cd10-9759-46b6-9ac2-863d48b99009', protocol='range'}
+13:14:08.293 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Finished assignment for group at generation 15: {consumer-weekly-sentiment-group-1-39b2cd10-9759-46b6-9ac2-863d48b99009=Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])}
+13:14:08.337 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Successfully synced group in generation Generation{generationId=15, memberId='consumer-weekly-sentiment-group-1-39b2cd10-9759-46b6-9ac2-863d48b99009', protocol='range'}
+13:14:08.338 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Notifying assignor about the new Assignment(partitions=[weekly-sentiments-0, weekly-sentiments-1, weekly-sentiments-2, weekly-sentiments-3, weekly-sentiments-4, weekly-sentiments-5])
+13:14:08.339 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Adding newly assigned partitions: weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+13:14:08.429 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-3 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 9 rack: aps1-az1)], epoch=4}}
+13:14:08.429 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-2 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 8 rack: aps1-az2)], epoch=4}}
+13:14:08.429 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-5 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 11 rack: aps1-az2)], epoch=4}}
+13:14:08.429 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 10 rack: aps1-az3)], epoch=4}}
+13:14:08.429 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-1 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b7-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 7 rack: aps1-az3)], epoch=4}}
+13:14:08.429 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Setting offset for partition weekly-sentiments-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 6 rack: aps1-az1)], epoch=4}}
+13:14:08.537 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions assigned: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+13:16:21.922 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[.[.[/dev/journal] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:16:21.922 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:16:21.924 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+13:16:22.790 [http-nio-8085-exec-8] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 513 ms
+13:21:00.160 [scheduling-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+13:21:00.176 [scheduling-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+13:21:00.209 [scheduling-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'session.timeout.ms' was supplied but isn't a known config.
+13:21:00.209 [scheduling-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.2
+13:21:00.209 [scheduling-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f8c67dc3ae0a3265
+13:21:00.209 [scheduling-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1789285860209
+13:21:00.606 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition weekly-sentiments-0 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:21:00.606 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition weekly-sentiments-1 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:21:00.606 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition weekly-sentiments-2 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:21:00.606 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition weekly-sentiments-3 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:21:00.606 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition weekly-sentiments-4 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:21:00.606 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Resetting the last seen epoch of partition weekly-sentiments-5 to 4 since the associated topicId changed from null to m0ZYvy9vRDCOw5WH9d5KZA
+13:21:00.607 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: lkc-rr0k6op
+13:21:00.607 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 2559186672 with epoch 0
+13:23:08.313 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Node -1 disconnected.
+13:30:30.210 [kafka-producer-network-thread | producer-1] INFO  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Node -1 disconnected.
+16:24:45.966 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Revoke previously assigned partitions weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4
+16:24:45.967 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: partitions revoked: [weekly-sentiments-1, weekly-sentiments-0, weekly-sentiments-3, weekly-sentiments-2, weekly-sentiments-5, weekly-sentiments-4]
+16:24:45.967 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Member consumer-weekly-sentiment-group-1-39b2cd10-9759-46b6-9ac2-863d48b99009 sending LeaveGroup request to coordinator b1-pkc-l7pr2.ap-south-1.aws.confluent.cloud:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+16:24:45.968 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+16:24:45.968 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+16:24:45.968 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Unsubscribed all topics or patterns and assigned partitions
+16:24:45.969 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Resetting generation due to: consumer pro-actively leaving the group
+16:24:45.969 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-weekly-sentiment-group-1, groupId=weekly-sentiment-group] Request joining group due to: consumer pro-actively leaving the group
+16:24:46.023 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+16:24:46.023 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+16:24:46.023 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+16:24:46.030 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-weekly-sentiment-group-1 unregistered
+16:24:46.030 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - weekly-sentiment-group: Consumer stopped
+16:24:46.036 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+16:24:46.038 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+16:24:46.039 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+16:24:46.039 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+16:24:46.039 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered

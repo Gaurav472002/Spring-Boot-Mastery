@@ -1,5 +1,8 @@
 package net.engineeringdigest.journalApp.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import net.engineeringdigest.journalApp.entity.JournalEntry;
 import net.engineeringdigest.journalApp.entity.User;
 import net.engineeringdigest.journalApp.service.JournalEntryService;
@@ -17,6 +20,11 @@ import java.util.stream.Collectors;
 // Rest Controllers are special type of components that are used to create the REST APIs
 @RestController
 @RequestMapping("/v4/journal")
+@Tag(
+        name = "Journal APIs",
+        description = "Create, read, update and delete journal entries"
+)
+@SecurityRequirement(name = "bearerAuth")
 public class journalEntryControllerV4 {
 
     @Autowired
@@ -25,6 +33,10 @@ public class journalEntryControllerV4 {
     @Autowired
     private UserService userService;
 
+    @Operation(
+            summary = "Get all journal entries",
+            description = "Returns all journal entries belonging to the authenticated user"
+    )
     @GetMapping("/getEntries")
     public ResponseEntity<List<JournalEntry>> getAllJournalEntriesOfUsers() {
 
@@ -48,6 +60,10 @@ public class journalEntryControllerV4 {
     }
 
 
+    @Operation(
+            summary = "Create journal entry",
+            description = "Creates a new journal entry for the authenticated user"
+    )
     @PostMapping("/sendEntry")
     public ResponseEntity<JournalEntry> createEntry(@RequestBody JournalEntry myEntry) {
 
@@ -84,6 +100,10 @@ public class journalEntryControllerV4 {
 //        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 //    }
 
+    @Operation(
+            summary = "Get journal entry by ID",
+            description = "Returns a journal entry belonging to the authenticated user"
+    )
     @GetMapping("/getEntryById/{id}")
     public ResponseEntity<JournalEntry> getById(@PathVariable String id) {
 
@@ -109,6 +129,10 @@ public class journalEntryControllerV4 {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+    @Operation(
+            summary = "Delete journal entry",
+            description = "Deletes a journal entry belonging to the authenticated user"
+    )
     @DeleteMapping("/deleteEntryById/{id}")
     public ResponseEntity<?> deleteEntry(@PathVariable String id) {
 
@@ -131,6 +155,10 @@ public class journalEntryControllerV4 {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+    @Operation(
+            summary = "Update journal entry",
+            description = "Updates an existing journal entry"
+    )
     @PutMapping("/update/{id}")
     public ResponseEntity<JournalEntry> updateJournalById(
             @PathVariable String id,

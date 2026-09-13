@@ -1,5 +1,6 @@
 package net.engineeringdigest.journalApp.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,6 +26,7 @@ public class User {
     private String email;
     private boolean sentimentAnalysis;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     // To store the references of the journals for a particular user
